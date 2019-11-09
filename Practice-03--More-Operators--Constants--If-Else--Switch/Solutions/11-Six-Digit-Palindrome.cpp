@@ -1,4 +1,11 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 11-Six-Digit-Palindrome.cpp
+ * @brief Solution for Problem 11 from Practice 3
+ * @author Dako Dimov
+ *
+ * Задача:
  * Проверете дали въведеното
  * шестцифрено число е палиндром
  */

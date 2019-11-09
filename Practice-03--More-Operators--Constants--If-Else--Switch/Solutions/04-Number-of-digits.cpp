@@ -1,4 +1,11 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 04-Number-of-digits.cpp
+ * @brief Solution for Problem 4 from Practice 3
+ * @author Alexander Dimitrov
+ *
+ * Задача:
  * Изведете броя на цифрите на
  * въведено число без цикли
  */

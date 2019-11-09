@@ -1,4 +1,11 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 07-Simple-Calculator.cpp
+ * @brief Solution for Problem 2 from Practice 3
+ * @author Dako Dimov
+ *
+ * Задача:
  * При въвеждането на число символ и число
  * извършва операцията над двете числа (+, -, *, /)
  */

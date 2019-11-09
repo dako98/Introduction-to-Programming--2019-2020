@@ -1,7 +1,20 @@
-﻿#include <iostream>
+﻿/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 07-Sequence-Separated-by-a-Symbol.cpp
+ * @brief Solution for Problem 7 from Practice 5
+ * @author Alexander Dimitrov
+ *
+ * Problem:
+ * Read a sequence of whole numbers separated by a comma
+ * and ending in a ';'. Print the Max, Min and Average of
+ * the sequence.
+ */
+
+#include <iostream>
 
 int main() {
-    
+
     int bufferNum, minNum, maxNum;
     int sum = 0, counter = 0;   // Начални стойности
     char bufferChar;
@@ -22,7 +35,7 @@ int main() {
         sum += bufferNum;
 
         // Ако четем първото число
-        if (counter == 0) 
+        if (counter == 0)
         {
             // Записваме първото число като min и max
             minNum = bufferNum;

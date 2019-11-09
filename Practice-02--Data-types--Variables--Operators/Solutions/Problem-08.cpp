@@ -1,4 +1,11 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file Problem-08.cpp
+ * @brief Solution for Problem 8 from Practice 2
+ * @author Alexander Dimitrov
+ *
+ * Задача:
  * Изчислете лицето на триъгълник по дадени две страни и ъгъл
  */
 

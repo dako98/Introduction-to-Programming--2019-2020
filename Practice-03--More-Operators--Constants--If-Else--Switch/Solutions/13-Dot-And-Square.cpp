@@ -1,6 +1,13 @@
-/*
- * По подадена точка A и страна на квадрат центриран в 
- * центъра на координатната система да се определи 
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 13-Dot-And-Square.cpp
+ * @brief Solution for Problem 13 from Practice 3
+ * @author Dako Dimov
+ *
+ * Задача:
+ * По подадена точка A и страна на квадрат центриран в
+ * центъра на координатната система да се определи
  * взаимното им положение.
  */
 
@@ -16,7 +23,7 @@ int main()
     double squareSide;
 
     cin >> x >> y >> squareSide;
-    
+
     bool onVerticalLine = abs( x - squareSide/2 ) < EPS || abs( x + squareSide/2 ) < EPS;       // Проверка дали лежи на някоя от вертикалните прави.
     bool onHorizontalLine = abs( y - squareSide/2 ) < EPS || abs( y + squareSide/2 ) < EPS;     // Проверка дали лежи на някоя от хоризонталните прави.
 
@@ -37,7 +44,7 @@ int main()
     }
     else
         cout<<"Outside.";
-    
+
 
     return 0;
 }

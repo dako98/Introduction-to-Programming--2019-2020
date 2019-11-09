@@ -1,3 +1,15 @@
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 07-Print-Nth-Bit.cpp
+ * @brief Solution for Problem 7 from Practice 4
+ * @author Alexander Dimitrov
+ *
+ * Problem:
+ * Read a whole non-negative number and a number
+ *  N in the range [0, 31] and print its Nth bit.
+ */
+
 #include <iostream>
 
 using namespace std;

@@ -1,4 +1,11 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 12-Closest-power-of-two.cpp
+ * @brief Solution for Problem 12 from Practice 3
+ * @author Alexander Dimitrov
+ *
+ * Задача:
  * Изведете най-близката степен на 2, която е по-голяма
  * от подадено цяло, неотрицателно число N (без цикли!).
  */

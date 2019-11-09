@@ -1,4 +1,17 @@
-﻿#include <iostream>
+﻿/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 06-Printing-a-Square.cpp
+ * @brief Solution for Problem 6 from Practice 5
+ * @author Alexander Dimitrov
+ *
+ * Problem:
+ * Read a whole number N and print a
+ * square consisting of the symbol '#'
+ * that has a side length of N.
+ */
+
+#include <iostream>
 
 int main() {
 

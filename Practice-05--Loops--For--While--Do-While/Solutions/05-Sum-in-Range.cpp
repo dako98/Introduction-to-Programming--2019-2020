@@ -1,4 +1,16 @@
-﻿#include <iostream>
+﻿/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 05-Sum-in-Range.cpp
+ * @brief Solution for Problem 5 from Practice 5
+ * @author Alexander Dimitrov
+ *
+ * Problem:
+ * Read two whole numbers N and M and sum
+ * all the numbers in the range [N, M].
+ */
+
+#include <iostream>
 
 int main() {
 

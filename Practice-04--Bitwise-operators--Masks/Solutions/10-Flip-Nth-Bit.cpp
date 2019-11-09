@@ -1,3 +1,15 @@
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 10-Flip-Nth.cpp
+ * @brief Solution for Problem 10 from Practice 4
+ * @author Alexander Dimitrov
+ *
+ * Problem:
+ * Read a whole non-negative and a number N in
+ * the range [0, 31] and flip the number's Nth bit.
+ */
+
 #include <iostream>
 
 using namespace std;
@@ -20,8 +32,9 @@ int main()
 
     // Маска с единица на N-тия бит
     unsigned int mask = 1 << N;
+    num = num ^ mask;
 
-    cout << (num ^ mask);
+    cout << num;
 
     return 0;
 }

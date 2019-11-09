@@ -1,3 +1,18 @@
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 12-Compound-Problem.cpp
+ * @brief Solution for Problem 12 from Practice 4
+ * @author Alexander Dimitrov
+ *
+ * Problem:
+ * Read a whole non-negative number A and three more numbers
+ * n1, n2 and n3 in the range [0, 31] and set A's bits in positions
+ * n1, n2 and n3 to 1. Save the result in a new variable B. Save
+ * the result of the multiplication of A and B in a new variable C.
+ * Print in the console ~C ^ A.
+ */
+
 #include <iostream>
 
 using namespace std;

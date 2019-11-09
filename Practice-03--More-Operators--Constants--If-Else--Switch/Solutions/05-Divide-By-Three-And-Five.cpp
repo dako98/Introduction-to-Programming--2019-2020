@@ -1,4 +1,11 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 05-Divide-By-Three-And-Five.cpp
+ * @brief Solution for Problem 5 from Practice 3
+ * @author Dako Dimov
+ *
+ * Задача:
  * Изведете дали число се дели на 5 или на 3
  */
 
@@ -31,10 +38,12 @@ int main()
         if (byThree)
             cout << " and 3";
     }
-    else if (byThree) {
+    else if (byThree)
+    {
         // Ако не се дели на 5, но се дели на 3
         cout << "divisable by 3";
-    } else {
+    } else
+    {
         // Ако не се дели на нито едно от двете
         cout << "not divisable by 5 or 3";
     }

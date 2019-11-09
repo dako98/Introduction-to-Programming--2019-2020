@@ -1,4 +1,12 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file Problem-05.cpp
+ * @brief Solution for Problem 5 from Practice 2
+ * @author Alexander Dimitrov
+ * @author Dako Dimov
+ *
+ * Задача:
  * По въведени две числа a и b, разменете
  * стойностите им и ги изведете на екрана.
  */

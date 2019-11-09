@@ -1,4 +1,12 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file Problem-09.cpp
+ * @brief Solution for Problem 9 from Practice 2
+ * @author Alexander Dimitrov
+ * @author Dako Dimov
+ *
+ * Задача:
  * Изчислете и изведете разстоянието между две точки
  * с координати A(x1, y1) и B(x2, y2), като прочетете
  * координатите x1, y1, x2 и y2 от стандартния вход.

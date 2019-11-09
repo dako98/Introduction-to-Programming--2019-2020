@@ -1,3 +1,16 @@
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 08-Set-Nth-Bit-To-One.cpp
+ * @brief Solution for Problem 9 from Practice 4
+ * @author Alexander Dimitrov
+ *
+ * Problem:
+ * Read a whole non-negative and a number
+ * N in the range [0, 31] and set the number's
+ * Nth bit to 1.
+ */
+
 #include <iostream>
 
 using namespace std;
@@ -20,8 +33,9 @@ int main()
 
     // Маска с единица на N-тия бит
     unsigned int mask = 1 << N;
+    num = num | mask;
 
-    cout << (num | mask);
+    cout << num;
 
     return 0;
 }

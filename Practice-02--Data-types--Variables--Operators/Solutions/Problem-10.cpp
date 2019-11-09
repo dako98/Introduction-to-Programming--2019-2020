@@ -1,4 +1,11 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file Problem-10.cpp
+ * @brief Solution for Problem 10 from Practice 2
+ * @author Alexander Dimitrov
+ *
+ * Задача:
  * Прочетете три цели числа от конзолата a, b и c:
  * коефициенти на квадратното уравнение ax^2 + bx + c = 0.
  * Пресметнете и изведете на конзолата корените му.

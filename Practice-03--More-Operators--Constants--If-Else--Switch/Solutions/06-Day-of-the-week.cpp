@@ -1,4 +1,11 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 06-Day-of-the-week.cpp
+ * @brief Solution for Problem 6 from Practice 3
+ * @author Alexander Dimitrov
+ *
+ * Задача:
  * При въвеждането на число от 1 до 7
  * изведете съответстващия ден от седмицата
  */

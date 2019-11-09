@@ -1,4 +1,12 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 03-Absolute-value.cpp
+ * @brief Solution for Problem 3 from Practice 3
+ * @author Alexander Dimitrov
+ * @author Dako Dimov
+ *
+ * Задача:
  * Изведете абсолютната стойност на въведено число
  */
 

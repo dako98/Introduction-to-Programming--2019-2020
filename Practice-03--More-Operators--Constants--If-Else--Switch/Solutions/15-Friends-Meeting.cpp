@@ -1,4 +1,11 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 15-Friends-Meeting.cpp
+ * @brief Solution for Problem 15 from Practice 3
+ * @author Dako Dimov
+ *
+ * Задача:
  * Двама приятели искат да си уговорят среща за поне 30 минути.
  * Всеки определя време, в което е свободен, като посочи начален
  * и краен час. Помогнете им да изберат време за срещата си,
@@ -20,7 +27,7 @@ int main()
 
     cin >> tens >> ones;
     time = (tens-'0')*10 + ones-'0';    // Съставяме си часа.
-    
+
     start1 = time*60;                   // Преобразуваме времето в минути.
     cin >> ones;                        // Прочитаме ":".
 
@@ -31,7 +38,7 @@ int main()
 
     cin >> tens >> ones;
     time = (tens-'0')*10 + ones-'0';    // Съставяме си часа.
-    
+
     end1 = time*60;                     // Преобразуваме времето в минути.
     cin >> ones;                        // Прочитаме ":".
 
@@ -43,7 +50,7 @@ int main()
 
     cin >> tens >> ones;
     time = (tens-'0')*10 + ones-'0';    // Съставяме си часа.
-    
+
     start2 = time*60;                   // Преобразуваме времето в минути.
     cin >> ones;                        // Прочитаме ":".
 
@@ -54,7 +61,7 @@ int main()
 
     cin >> tens >> ones;
     time = (tens-'0')*10 + ones-'0';    // Съставяме си часа.
-    
+
     end2 = time*60;                     // Преобразуваме времето в минути.
     cin >> ones;                        // Прочитаме ":".
 
@@ -79,6 +86,6 @@ int main()
         minutes = earliestStart%60;
         cout << hours << ':' << minutes;
     }
-    
+
     return 0;
 }

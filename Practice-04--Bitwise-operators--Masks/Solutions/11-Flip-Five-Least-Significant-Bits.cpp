@@ -1,3 +1,14 @@
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 11-Flip-Five-Least-Significant-Bits.cpp
+ * @brief Solution for Problem 11 from Practice 4
+ * @author Alexander Dimitrov
+ *
+ * Problem:
+ * Read a whole non-negative and flip its five LSBs.
+ */
+
 #include <iostream>
 
 using namespace std;
@@ -14,7 +25,9 @@ int main()
     mask = (mask << 1) | 1; // 00...01111
     mask = (mask << 1) | 1; // 00...11111
 
-    cout << (num ^ mask);
+    num = num ^ mask;
+
+    cout << num;
 
     return 0;
 }

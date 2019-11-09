@@ -1,4 +1,11 @@
-﻿/*
+﻿/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 10-Symbol-type.cpp
+ * @brief Solution for Problem 10 from Practice 3
+ * @author Alexander Dimitrov
+ *
+ * Задача:
  * Прочетете един символ от конзолата и изведете дали е главна
  * буква, малка буква, цифра или друг символ.
  */

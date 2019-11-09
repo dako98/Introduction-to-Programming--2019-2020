@@ -1,4 +1,12 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file Problem-07.cpp
+ * @brief Solution for Problem 7 from Practice 2
+ * @author Alexander Dimitrov
+ * @author Dako Dimov
+ *
+ * Задача:
  * Прочетете три числа (дължини на страни на триъгълник)
  * и изведете лицето му.
  */

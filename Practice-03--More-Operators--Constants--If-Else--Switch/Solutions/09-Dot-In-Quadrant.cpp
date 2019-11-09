@@ -1,4 +1,11 @@
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 09-Dot-In-Quadrant.cpp
+ * @brief Solution for Problem 9 from Practice 3
+ * @author Dako Dimov
+ *
+ * Задача:
  * Проверете в кой квадрант е въведената
  * точка с координати цели числа.
  */

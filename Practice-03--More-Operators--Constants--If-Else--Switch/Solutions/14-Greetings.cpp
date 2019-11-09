@@ -1,5 +1,12 @@
-/*
- * Въвежда се час и се извежда “Good morning!”, 
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 14-Greetings.cpp
+ * @brief Solution for Problem 14 from Practice 3
+ * @author Dako Dimov
+ *
+ * Задача:
+ * Въвежда се час и се извежда “Good morning!”,
  * “Good day!”, “Good evening!” или “Good night!”.
  * Проверете дали часът е валиден.
  */
@@ -23,9 +30,9 @@ int main()
 
     minutes = (tens-'0')*10 + (ones-'0');
 
-    if (hour < 24 || hour >= 0
-    || minutes >= 0 || minutes < 60
-    || formatCharacter == ':')
+    if (hour < 24 && hour >= 0
+    && minutes >= 0 && minutes < 60
+    && formatCharacter == ':')
     {
         if (hour > 0 && hour <= 7)
         {
@@ -43,12 +50,12 @@ int main()
         {
             cout << "Good night!";
         }
-    }        
+    }
     else
     {
         cout << "Wrong time.";
         return 1;
     }
-    
+
     return 0;
 }

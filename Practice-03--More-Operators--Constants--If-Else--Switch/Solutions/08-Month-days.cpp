@@ -1,5 +1,12 @@
 
-/*
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 08-Month-days.cpp
+ * @brief Solution for Problem 8 from Practice 3
+ * @author Alexander Dimitrov
+ *
+ * Задача:
  * При въвеждането на число символ и число
  * извършва операцията над двете числа (+, -, *, /)
  */

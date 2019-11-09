@@ -1,3 +1,14 @@
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Alexander and Dako.
+ * @file 06-Most-Significant-Bit.cpp
+ * @brief Solution for Problem 6 from Practice 4
+ * @author Alexander Dimitrov
+ *
+ * Problem:
+ * Read a whole non-negative number and print its MSB.
+ */
+
 #include <iostream>
 
 using namespace std;
