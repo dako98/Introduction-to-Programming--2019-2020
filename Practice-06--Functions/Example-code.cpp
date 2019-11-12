@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math.h>
+#include <cmath>
 
 // Function declarations
 void greetings();
@@ -49,7 +49,7 @@ int main()
     // Calls our function pow(int, int)
     std::cout << pow(2, 5) << std::endl;
 
-    // Calls the function pow(int, int) from math.h
+    // Calls the function pow(int, int) from cmath
     std::cout << std::pow(2, 5) << std::endl;
 
     greetingsSpammer(6);

@@ -12,7 +12,7 @@
  */
 
 #include <iostream>
-#include <math.h>   // Библиотека за математически функции
+#include <cmath>   // Библиотека за математически функции
 
 using namespace std;
 
