@@ -1,3 +1,11 @@
+/**
+ * This file is part of the Introduction to Programming
+ * course 2019/20 held by Dako and Alexander.
+ * @file Example-code.cpp
+ * @brief Function examples from practice.
+ * @author Dako Dimov
+ */
+
 #include <iostream>
 #include <cmath>
 
