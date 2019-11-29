@@ -1,8 +1,8 @@
 /**
  * This file is part of the Introduction to Programming
  * course 2019/20 held by Alexander and Dako.
- * @file 03-Replace-Repeating.cpp
- * @brief Solution for Sample Problem 03
+ * @file 03-Replace-Repeating-Inplace.cpp
+ * @brief Inplace Solution for Sample Problem 03
  * @author Alexander Dimitrov
  *
  * Problem:
@@ -23,8 +23,6 @@
 float mAbs(float num) {
     return num < 0 ? -num : num;
 }
-
-
 
 int main() {
 
@@ -64,7 +62,6 @@ int main() {
                 }
                 n -= (count - 1);
             }
-
         }
     }
 
