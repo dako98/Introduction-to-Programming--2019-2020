@@ -13,19 +13,19 @@
 
 // arr and size are passed to the function
 // with & so that we can change both of them.
-void insertAt(int*& arr, int& size, int& capacity, int elem, int pos)
+bool insertAt(int*& arr, int& size, int& capacity, int elem, int pos)
 {
     if (size + 1 > capacity) {
 
+        // Create a new array with with double the capacity
+        int* newArr = new (std::nothrow) int[capacity * 2];
+        // If there isn't enough memory for a new array
+        // stop the function with result false
+        if (!newArr)
+            return false;
+
         // Increase the capacity
         capacity *= 2;
-
-        // Create a new array with with double the capacity
-        int* newArr = new (std::nothrow) int[capacity];
-        // If there isn't enough memory for a new array
-        // stop the function
-        if (!newArr)
-            return;
 
         // Copy the old elements to the new array up to the
         // specificied position
@@ -62,6 +62,8 @@ void insertAt(int*& arr, int& size, int& capacity, int elem, int pos)
         size++;
 
     }
+
+    return true;
 }
 
 
@@ -103,7 +105,10 @@ int main()
     }
 
     // Insert an element to the array
-    insertAt(pArr, numOfElements, capacityOfTheArray, elem, pos);
+    if (insertAt(pArr, numOfElements, capacityOfTheArray, elem, pos))
+        std::cout << "The element was inserted." << std::endl;
+    else
+        std::cout << "The element could not be inserted! Not enough memory?" << std::endl;
 
     // And printing it on the console
     for (int i = 0; i < numOfElements; i++)

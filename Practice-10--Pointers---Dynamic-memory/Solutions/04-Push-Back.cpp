@@ -13,20 +13,20 @@
 
 // arr, size and capacity are passed to the
 // function with & so that we can change them.
-void pushBack(int*& arr, int& size, int& capacity, int elem)
+bool pushBack(int*& arr, int& size, int& capacity, int elem)
 {
     // Check if there isn't enough space for a new element
     if (size + 1 > capacity) {
 
+        // Create a new array with double the capacity
+        int* newArr = new (std::nothrow) int[capacity * 2];
+        // If there isn't enough memory for a new array
+        // stop the function with result false
+        if (!newArr)
+            return false;
+
         // Increase the capacity
         capacity *= 2;
-
-        // Create a new array with double the capacity
-        int* newArr = new (std::nothrow) int[capacity];
-        // If there isn't enough memory for a new array
-        // stop the function
-        if (!newArr)
-            return;
 
         // Copy the old elements to the new array
         for (int i = 0; i < size; i++)
@@ -50,6 +50,8 @@ void pushBack(int*& arr, int& size, int& capacity, int elem)
         // adjust the size by adding 1.
         arr[size++] = elem;
     }
+
+    return true;
 }
 
 
@@ -82,7 +84,10 @@ int main()
     std::cin >> elem;
 
     // Adding an element to the array
-    pushBack(pArr, numOfElements, capacityOfTheArray, elem);
+    if (pushBack(pArr, numOfElements, capacityOfTheArray, elem))
+        std::cout << "The element was added." << std::endl;
+    else
+        std::cout << "The element could not be added! Not enough memory?" << std::endl;
 
     // And printing it on the console
     for (int i = 0; i < numOfElements; i++)
