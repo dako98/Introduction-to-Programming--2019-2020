@@ -27,7 +27,7 @@ void sortWordArray(char** arr, int size)
     }
 }
 
-void clearWordArray(char**& arr, int i)
+void clearWordArray(char** arr, int i)
 {
     while (i > 0) {
         --i;
