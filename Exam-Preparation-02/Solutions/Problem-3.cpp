@@ -4,6 +4,7 @@
  * @file Problem-3.cpp
  * @brief Solution for Sample Problem 3 from Exam-Preparation-02
  * @author Alexander Dimitrov
+ * @author Dako Dimov
  */
 
 #include <iostream>
