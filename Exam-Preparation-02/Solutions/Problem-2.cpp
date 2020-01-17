@@ -4,13 +4,18 @@
  * @file Problem-2.cpp
  * @brief Solution for Sample Problem 2 from Exam-Preparation-02
  * @author Alexander Dimitrov
- * @author Dako Dimov
  */
 
 #include <iostream>
 
 // Number of coefficients in the quadratic equations
 const int COEFFICIENTS_COUNT = 3;
+
+// Each equation is an array of three coefficients
+typedef float t_equation_old[COEFFICIENTS_COUNT];
+
+// A more modern approach to doing this is:
+using t_equation = float[COEFFICIENTS_COUNT];
 
 // Epsilon small number used for checking roots
 const float EPS = 0.00001;
@@ -28,13 +33,13 @@ inline int abs(int num)
 }
 
 // checks if root is a solution to the given equation
-inline bool isRoot(const float* eq, int root)
+inline bool isRoot(const t_equation eq, int root)
 {
     return abs(eq[0] * root * root + eq[1] * root + eq[2]) < EPS;
 }
 
 // prints a formatted equation
-void printEquation(const float* eq)
+void printEquation(const t_equation eq)
 {
     for (int i = 0; i < COEFFICIENTS_COUNT; i++) {
         if (eq[i] != 0) {
@@ -52,12 +57,11 @@ void printEquation(const float* eq)
     std::cout << "\n";
 }
 
-// deletes an allocated matrix
-void cleanMatrix(float** mat, int size)
+// reads an equation from the console
+void readEquation(t_equation eq)
 {
-    for (int i = 0; i < size; i++)
-        delete[] mat[i];
-    delete[] mat;
+    for (int i = 0; i < COEFFICIENTS_COUNT; i++)
+        std::cin >> eq[i];
 }
 
 
@@ -72,29 +76,16 @@ int main()
     }
 
     // Creating a dynamic array of equations
-    float** eqsArr = new (std::nothrow) float*[numOfEqs];
+    t_equation* eqsArr = new (std::nothrow) t_equation[numOfEqs];
     
     if (!eqsArr) {
         std::cout << "Not enough memory!\n";
         return 2;
     }
 
-    // Creating each equation
-    for (int i = 0; i < numOfEqs; i++)
-    {
-        eqsArr[i] = new (std::nothrow) float[COEFFICIENTS_COUNT];
-        if (!eqsArr[i]) {
-            std::cout << "Not enough memory!\n";
-            // Don't forget to delete your memory!
-            cleanMatrix(eqsArr, i);
-            return 2;
-        }
-    }
-
     // Entering the equations
     for (int i = 0; i < numOfEqs; i++)
-        for (int j = 0; j < COEFFICIENTS_COUNT; j++)
-            std::cin >> eqsArr[i][j];
+        readEquation(eqsArr[i]);
 
     // Entering possible roots of the equations
     int numOfPR;
@@ -102,7 +93,7 @@ int main()
     if (numOfPR < 0) {
         std::cout << "Wrong number of integers!\n";
         // Don't forget to delete your memory!
-        cleanMatrix(eqsArr, numOfEqs);
+        delete[] eqsArr;
         return 1;
     }
 
@@ -111,7 +102,7 @@ int main()
     if (!possibleRoots) {
         std::cout << "Not enough memory!\n";
         // Don't forget to delete your memory!
-        cleanMatrix(eqsArr, numOfEqs);
+        delete[] eqsArr;
         return 2;
     }
     
@@ -130,7 +121,7 @@ int main()
     }
 
     // Don't forget to delete your memory!
-    cleanMatrix(eqsArr, numOfEqs);
+    delete[] eqsArr;
     delete[] possibleRoots;
 
     return 0;
