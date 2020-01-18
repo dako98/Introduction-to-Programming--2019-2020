@@ -52,10 +52,10 @@ void cleanMatrix(int** matrix, int rows)
 void printJaggedMatrix(const int* const* matrix, int rows, const size_t* rowsElements)
 {
     for (int i = 0; i < rows; i++) {
-        std::cout << i << ':';
+        std::cout << i << ": ";
         for (size_t j = 0; j < rowsElements[i]; j++)
             std::cout << ' ' << matrix[i][j];
-        std::cout << "\n";
+        std::cout << '\n';
     }
 }
 
@@ -92,12 +92,12 @@ int main()
     }
 
     // Nullify array
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < maxSum + 1; i++)
         sumCountArr[i] = 0;
 
     // Count each number (digit sum in this case) just like in counting sort
-    for (int i = 0; i < size; i++)
-        sumCountArr[sumDigits(arr[i])]++;
+    for (int i = 0; i < maxSum + 1; i++)
+        ++sumCountArr[sumDigits(arr[i])];
 
     // Array of arrays
     int** matrix = new (std::nothrow) int*[maxSum + 1];
