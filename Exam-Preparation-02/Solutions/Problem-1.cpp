@@ -96,7 +96,7 @@ int main()
         sumCountArr[i] = 0;
 
     // Count each number (digit sum in this case) just like in counting sort
-    for (int i = 0; i < maxSum + 1; i++)
+    for (int i = 0; i < size; i++)
         ++sumCountArr[sumDigits(arr[i])];
 
     // Array of arrays
